@@ -1,6 +1,6 @@
 # JavaSprint1-PharmacySystemT3
 
----
+## User Documentation
 
 This is a Pharmacy Medicatin Tracking System that stores the following:
 
@@ -42,6 +42,25 @@ MedicationTrackingSystem: The MedicationTrackingSystem manages all patients, doc
 - restock
 
 Main: Contains the menu and scanner.
+
+---
+
+Development Documentation
+
+---
+
+JavaDocs
+
+---
+
+The Source Code Directory Structure of this project in bash is:
+Main.Java - This is the entry point of the application
+MedicationTrackingSystem.java - This manages all system operations
+Person.java - Superclass for both patient and doctor
+Patient.java - Patient with medical record
+Doctor.java - Doctor
+Medication.java - Medications in stock
+Prescription.java - Issued prescriptions
 
 ---
 
