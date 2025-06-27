@@ -17,6 +17,8 @@ cd Pharmacy
 javac \* .java
 java Main
 
+Once the application starts you will be greeted with a menu that contains number options, please type the number to the function you wish to complete and press enter.
+
 ---
 
 Descriptions of the classes included
