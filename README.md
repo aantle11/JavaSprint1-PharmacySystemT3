@@ -42,3 +42,18 @@ MedicationTrackingSystem: The MedicationTrackingSystem manages all patients, doc
 - restock
 
 Main: Contains the menu and scanner.
+
+---
+
+To Compile this project in the terminal please run the following commands:
+
+cd Pharmcy
+javac \*.java
+
+---
+
+---
+
+To retrieve the source code for this project in gitbash do the following commands
+git clone https://github.com/yourusername/pharmacy-tracking-system.git
+( this will clone the repo onto your local machine )
