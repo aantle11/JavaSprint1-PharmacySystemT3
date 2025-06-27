@@ -45,7 +45,7 @@ Main: Contains the menu and scanner.
 
 ---
 
-Development Documentation
+## Development Documentation
 
 ---
 
@@ -70,6 +70,46 @@ cd Pharmcy
 javac \*.java
 
 ---
+
+this is how a database would look in theory for this project
+Entity | Attributes | Relationships
+Patient | id, name, age, phoneNumber | has prescriptions
+Doctor | id, name, specialization | writes prescriptions
+Medication | id, name, quantity, expiryDate | medication for prescription
+Prescription | id, patient_id, doctor_id, medication_id, dosage, date links the entites together
+
+in sql this would be the code for the tables.
+CREATE TABLE Patients (
+id INT PRIMARY KEY,
+name VARCHAR(100),
+age INT,
+phone VARCHAR(20)
+);
+
+CREATE TABLE Doctors (
+id INT PRIMARY KEY,
+name VARCHAR(100),
+specialization VARCHAR(100)
+);
+
+CREATE TABLE Medications (
+id INT PRIMARY KEY,
+name VARCHAR(100),
+quantity INT,
+expiryDate DATE
+);
+
+CREATE TABLE Prescriptions (
+id INT PRIMARY KEY,
+patient_id INT,
+doctor_id INT,
+medication_id INT,
+dosage VARCHAR(50),
+dateIssued DATE,
+FOREIGN KEY (patient_id) REFERENCES Patients(id),
+FOREIGN KEY (doctor_id) REFERENCES Doctors(id),
+FOREIGN KEY (medication_id) REFERENCES Medications(id)
+);
 
 ---
 
