@@ -49,10 +49,6 @@ Main: Contains the menu and scanner.
 
 ---
 
-JavaDocs
-
----
-
 The Source Code Directory Structure of this project in bash is:
 Main.Java - This is the entry point of the application
 MedicationTrackingSystem.java - This manages all system operations
@@ -64,7 +60,7 @@ Prescription.java - Issued prescriptions
 
 ---
 
-To Compile this project in the terminal please run the following commands:
+To Compile this project in the terminal please run the following commands it should only take a minute or two:
 
 cd Pharmcy
 javac \*.java
